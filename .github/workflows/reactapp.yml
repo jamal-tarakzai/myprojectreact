@@ -17,4 +17,4 @@ jobs:
             - run: echo "Deploying website"
             - run: surge ./build wiry-ear.surge.sh --token ${{ secrets.LAND_TOKKEN }} 
           
-            #- run: echo "Please visit => ${{ secrets.LAND_TOKKEN }}"
+            - run: echo "Please visit => ${{ secrets.LAND_TOKKEN }}"
