@@ -13,8 +13,7 @@ jobs:
               with:
                node-version: 12.x
 
-            - run: npm install -g surge
-            - run: echo "Deploying website"
-            - run: surge ./ wiggly-sleet.surge.sh --token ${{ secrets.LAND_TOKKEN }} 
-          
-            - run: echo "Please visit => ${{ secrets.LAND_TOKKEN }}"
+            - name: Install Surge
+              run: npm install -g surge
+            - name: Run surge
+              run: surge ./ bootcamp_setup_ziakhan.surge.sh --token ${{ secrets.SURGE_TOKEN }}
