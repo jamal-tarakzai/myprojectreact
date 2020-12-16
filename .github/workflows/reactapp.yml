@@ -36,4 +36,4 @@ jobs:
         run: yarn build
       
       - name: instaling surge
-        run: surge ./build http://jamaltarakzai.surge.sh/ 
+        run: surge ./ http://jakm9911-boot.surge.sh/ --token ${{ secrets.LAND_TOKKEN }}
