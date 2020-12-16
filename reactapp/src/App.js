@@ -8,8 +8,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>
 a
-ya amend ho gayi hai.
-        </p>
+ho gaya chutyappa        </p>
         <a
           className="App-link"
           href="https://reactjs.org"
